@@ -32,5 +32,8 @@ java_library {
     errorprone: {
         javacflags: ["-Xep:MissingOverride:OFF"],
     },
-    no_framework_libs: true,
+
+    no_standard_libs: true,
+    libs: ["core-all"],
+    system_modules: "core-all-system-modules",
 }
